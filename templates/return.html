@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>
+            energy model api
+        </title>
+    </head>
+    <body bgcolor="#ffe4e1">
+        <h1>Energy Prediction SEOUL</h1><br>
+        <h3>This data contains 2021-01 ~ 2021.10</h3>
+
+        <div style='text-align:center;'>
+            <div id='simulate'>
+                <br><br><br><br>
+                <h2>서울시 전력 거래 예측</h2>
+                <h4>예측 결과를 반환합니다: </h4>
+                <br><br>
+                <!--url_for() Flask에서 동적 URL 만들기-->
+      <form method="POST", action = "{{url_for('prediction')}}",style='text-align:center;'>
+        <div>
+          연료원  : <label for= "연료원"> </label>
+            <select id='연료원', name="연료원">
+            <option value="none" disabled>=== 선택 ===</option>
+            <option value="0" selected>LNG</option>
+            <option value="1" selected>바이오</option>
+            <option value="2" selected>연료전지</option>
+            <option value="4" selected>폐기물</option>
+            <option value="3" selected>태양광</option>
+            </select><br><br>
+        </div>  
+
+        <div>
+            Month   :<label for= "Month"> </label>
+            <select id='Month', name='Month'>
+            <option value="none" disabled>=== 선택 ===</option>
+            <option value="0" selected>1월</option>
+            <option value="1" selected>2월</option>
+            <option value="2" selected>3월</option>
+            <option value="3" selected>4월</option>
+            <option value="4" selected>5월</option>
+            <option value="5" selected>6월</option>
+            <option value="6" selected>7월</option>
+            <option value="7" selected>8월</option>
+            <option value="8" selected>9월</option>
+            <option value="9" selected>10월</option>
+            <option value="10" selected>11월</option>
+            <option value="11" selected>12월</option>
+            </select><br><br>
+        </div>
+        <div>
+            Day     :<label for= "Day"> </label>
+            <select id='Day', name='Day'>
+            <option value="0" selected>1</option>
+            <option value="1" selected>2</option>
+            <option value="2" selected>3</option>
+            <option value="3" selected>4</option>
+            <option value="4" selected>5</option>
+            <option value="5" selected>6</option>
+            <option value="6" selected>7</option>
+            <option value="7" selected>8</option>
+            <option value="8" selected>9</option>
+            <option value="9" selected>10</option>
+            <option value="10" selected>11</option>
+            <option value="11" selected>12</option>
+            <option value="12" selected>13</option>
+            <option value="13" selected>14</option>
+            <option value="14" selected>15</option>
+            <option value="15" selected>16</option>
+            <option value="16" selected>17</option>
+            <option value="17" selected>18</option>
+            <option value="18" selected>19</option>
+            <option value="19" selected>20</option>
+            <option value="20" selected>21</option>
+            <option value="21" selected>22</option>
+            <option value="22" selected>23</option>
+            <option value="23" selected>24</option>
+            <option value="24" selected>25</option>
+            <option value="25" selected>26</option>
+            <option value="26" selected>27</option>
+            <option value="27" selected>28</option>
+            <option value="28" selected>29</option>
+            <option value="29" selected>30</option>
+            <option value="30" selected>31</option>
+            </select><br><br>
+        </div>
+        <input type="submit", value="Submit">
+    </form>
+            <div>
+                <h5>예측된 결과는 {{data}} 입니다.</h5>
+            </div>     
+                <a href='/'>시작 화면으로 돌아갑니다</a>
+            </div>
+        </div>
+
+    </body>
+</html>

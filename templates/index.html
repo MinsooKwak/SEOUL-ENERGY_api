@@ -1,0 +1,392 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    <!-- Google Fonts Roboto -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&amp;display=swap">
+    <!-- MDB -->
+    <link rel="stylesheet" href="static/css/mdb.min.css">
+    <!-- Custom styles -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<style>INPUT:-webkit-autofill,SELECT:-webkit-autofill,TEXTAREA:-webkit-autofill{animation-name:onautofillstart}INPUT:not(:-webkit-autofill),SELECT:not(:-webkit-autofill),TEXTAREA:not(:-webkit-autofill){animation-name:onautofillcancel}@keyframes onautofillstart{from{}}@keyframes onautofillcancel{from{}}
+</style></head>
+<body>
+      <!--Main Navigation-->
+  <header>
+    <style>
+      /* Carousel styling */
+      #introCarousel,
+      .carousel-inner,
+      .carousel-item,
+      .carousel-item.active {
+        height: 100vh;
+      }
+
+      .carousel-item:nth-child(1) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/76.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(2) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/77.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      .carousel-item:nth-child(3) {
+        background-image: url('https://mdbootstrap.com/img/Photos/Others/images/78.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+      }
+
+      /* Height for devices larger than 576px */
+      @media (min-width: 992px) {
+        #introCarousel {
+          margin-top: -58.59px;
+        }
+      }
+
+      .navbar .nav-link {
+        color: #fff !important;
+      }
+    </style>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark d-none d-lg-block" style="z-index: 2000;">
+      <div class="container-fluid">
+        <!-- Navbar brand -->
+        <a class="navbar-brand nav-link" target="_blank" href="/">
+          <strong>SEOUL ENERGY</strong>
+        </a>
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarExample01" aria-controls="navbarExample01" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarExample01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" aria-current="page" href="#intro">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="" rel="nofollow" target="_blank">Voice</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dashboard" target="_blank">Dashboard</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav list-inline">
+            <!-- Icons : if needed Here-->
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar -->
+
+    <!-- Carousel wrapper -->
+    <div id="introCarousel" class="carousel slide carousel-fade shadow-2-strong" data-mdb-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="0" class=""></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="1" class="active" aria-current="true"></li>
+        <li data-mdb-target="#introCarousel" data-mdb-slide-to="2" class=""></li>
+      </ol>
+
+      <!-- Inner -->
+      <div class="carousel-inner">
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.6);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h1 class="mb-3">Energy sales prediction</h1>
+                <h5 class="mb-4">let's predict energy sales amount in Seoul.</h5>
+                <a class="btn btn-outline-light btn-lg m-2" href="/" role="button" rel="nofollow" target="_blank">Energy Prediction</a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item active">
+          <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>"Energy is eternal delight"</h2>
+                <h4>William blake</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Single item -->
+        <div class="carousel-item">
+          <div class="mask" style="
+                background: linear-gradient(
+                  45deg,
+                  rgba(29, 236, 197, 0.7),
+                  rgba(91, 14, 214, 0.7) 100%
+                );
+              ">
+            <div class="d-flex justify-content-center align-items-center h-100">
+              <div class="text-white text-center">
+                <h2>Making Our Life: Be our energy, Our Future</h2>
+                <a class="btn btn-outline-light btn-lg m-2" href="http://192.168.16.1:3000/public/dashboard/ab233816-a2f4-4bd5-a3d5-20a17764e782" target="_blank" role="button">Dashboard</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Inner -->
+
+      <!-- Controls -->
+      <a class="carousel-control-prev" href="#introCarousel" role="button" data-mdb-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#introCarousel" role="button" data-mdb-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+    <!-- Carousel wrapper -->
+  </header>
+  <!--Main Navigation-->
+
+  <!--Main layout-->
+  <main class="mt-5">
+    <div class="container">
+      <!--Section: Content-->
+      <section>
+        <div class="row">
+          <div class="col-md-6 gx-5 mb-4">
+            <div class="bg-image hover-overlay ripple shadow-2-strong" data-mdb-ripple-color="light">
+              <img src="https://images.unsplash.com/photo-1568347877321-f8935c7dc5a3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80" class="img-fluid">
+              <a href="#!">
+                <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+              </a>
+            </div>
+          </div>
+
+          <div class="col-md-6 gx-5 mb-4">
+            <h4><strong>서울시 전력을 예측합니다</strong></h4><br>
+            <p class="text-muted">2021년 한국전력거래소는 2021년 300일간의 일별 전력거래량 자료를 제공했습니다. LNG, 바이오, 연료전지, 태양광, 폐기물의 연료원의 일별 전력거래량을 다룹니다. 
+              전력시장에 미등록한 발전기의 발전량은 포함하지 않습니다. 거래량은 송전단을 기준으로 하고 있으므로 서울의 전체 발전량을 의미하진 않습니다. </p>
+            <p><strong>전력거래량 추이</strong></p>
+            <p class="text-muted">80%를 상회하는 수준으로 LNG가 거래되고 있습니다. 연료전지는 약 8%의 비중을 차지하며, 바이오, 폐기물, 그리고 태양광 순으로 높습니다.</p>
+            <p class="text-muted">LNG >>> 연료전지 > 바이오 > 폐기물 > 태양광</p>
+            <p class="text-muted"><strong>한국전력거래소 전력거래시스템</strong></p>
+            <a href="https://dr.kmos.kr/nx/nxIndex.do">전력거래 시스템</a>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5">
+
+      <!--Section: Content-->
+      <section class="text-center">
+        <h4 class="mb-5"><strong>Energy Seoul</strong></h4>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://www.paxetv.com/news/photo/202001/84936_56731_1117.jpg" class="img-fluid">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Fuel Cell(연료전지)</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://www.kgnews.co.kr/data/photos/20211040/art_16334995465512_50395e.jpg" class="img-fluid">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Solar energy</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+                <img src="https://iea.imgix.net/1d5c97e0-168b-4631-93db-697540c71b7f/bioenergy.jpg.jpg?auto=compress%2Cformat&fit=min&q=80&rect=0%2C0%2C3000%2C2000&w=1800&h=1200&fit=crop&fm=jpg&q=70&auto=format" class="img-fluid">
+                <a href="#!">
+                  <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                </a>
+              </div>
+              <div class="card-body">
+                <h5 class="card-title">Bio energy</h5>
+                <p class="card-text">
+                  Some quick example text to build on the card title and make up the bulk of the
+                  card's content.
+                </p>
+                <a href="#!" class="btn btn-primary">Button</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+
+      <hr class="my-5">
+
+      <!--Section: Content-->
+      <section class="mb-5">
+        <h4 class="mb-5 text-center"></h4>
+
+        <div class="row d-flex justify-content-center">
+          <div class="col-md-6">
+            
+          </div>
+        </div>
+      </section>
+      <!--Section: Content-->
+    </div>
+  </main>
+  <!--Main layout-->
+  
+
+  <!--Footer-->
+  <footer class="bg-light text-lg-start">
+    <div class="py-4 text-center">
+      
+      
+    </div>
+
+    <hr class="m-0">
+
+    <div id='simulate'>
+      <br><br><br><br>
+      <h2>서울시 전력 거래 예측</h2>
+      <h4>예측 결과를 반환합니다: </h4>
+      <br><br>
+      
+      <!--url_for() Flask에서 동적 URL 만들기-->
+      <form method="POST", action = "{{url_for('prediction')}}",style='text-align:center;'>
+        <div>
+          연료원  : <label for= "연료원">연료원</label>
+            <select id='연료원', name="연료원">
+            <option value="none" disabled>=== 선택 ===</option>
+            <option value="0" selected>LNG</option>
+            <option value="1" selected>바이오</option>
+            <option value="2" selected>연료전지</option>
+            <option value="4" selected>폐기물</option>
+            <option value="3" selected>태양광</option>
+            </select><br><br>
+        </div>  
+
+        <div>
+            Month   :<label for= "Month">Month</label>
+            <select id='Month', name='Month'>
+            <option value="none" disabled>=== 선택 ===</option>
+            <option value="0" selected>1월</option>
+            <option value="1" selected>2월</option>
+            <option value="2" selected>3월</option>
+            <option value="3" selected>4월</option>
+            <option value="4" selected>5월</option>
+            <option value="5" selected>6월</option>
+            <option value="6" selected>7월</option>
+            <option value="7" selected>8월</option>
+            <option value="8" selected>9월</option>
+            <option value="9" selected>10월</option>
+            <option value="10" selected>11월</option>
+            <option value="11" selected>12월</option>
+            </select><br><br>
+        </div>
+        <div>
+            Day     :<label for= "Day">Day</label>
+            <select id='Day', name='Day'>
+            <option value="0" selected>1</option>
+            <option value="1" selected>2</option>
+            <option value="2" selected>3</option>
+            <option value="3" selected>4</option>
+            <option value="4" selected>5</option>
+            <option value="5" selected>6</option>
+            <option value="6" selected>7</option>
+            <option value="7" selected>8</option>
+            <option value="8" selected>9</option>
+            <option value="9" selected>10</option>
+            <option value="10" selected>11</option>
+            <option value="11" selected>12</option>
+            <option value="12" selected>13</option>
+            <option value="13" selected>14</option>
+            <option value="14" selected>15</option>
+            <option value="15" selected>16</option>
+            <option value="16" selected>17</option>
+            <option value="17" selected>18</option>
+            <option value="18" selected>19</option>
+            <option value="19" selected>20</option>
+            <option value="20" selected>21</option>
+            <option value="21" selected>22</option>
+            <option value="22" selected>23</option>
+            <option value="23" selected>24</option>
+            <option value="24" selected>25</option>
+            <option value="25" selected>26</option>
+            <option value="26" selected>27</option>
+            <option value="27" selected>28</option>
+            <option value="28" selected>29</option>
+            <option value="29" selected>30</option>
+            <option value="30" selected>31</option>
+            </select><br><br>
+        </div>
+        <input type="submit", value="Submit">
+
+    </form>
+          </div>
+      {{pred}}
+   
+      <a href='/'>시작 화면으로 돌아갑니다</a>
+      <br>
+      <h1><p><strong>Dash Board</strong></p></h1>
+      <iframe
+  src="http://192.168.16.1:3000/public/dashboard/ab233816-a2f4-4bd5-a3d5-20a17764e782"
+  frameborder="0"
+  width="1880"
+  height="950"
+  allowtransparency
+></iframe>
+  
+      
+
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      2021 project
+      <a class="text-dark">MinsooKwak</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!--Footer-->
+    <!-- MDB -->
+    <script type="text/javascript" src="static/js/mdb.min.js"></script>
+
+</body></html>
