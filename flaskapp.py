@@ -25,13 +25,9 @@ def prediction():
     pred = model.predict(arr)
     return render_template('return.html',data=pred)
 
-#prediction function
-@property
-def ValuePredictor(to_predict_list):
-    to_predict = np.array(to_predict_list).reshape(1,3)
-    result = model.predict(to_predict)
-    return result[0]
-
+@app.route('/intro')
+def intro():
+    return render_template('intro.html')     
 
 
 # 앱 실행
