@@ -212,7 +212,7 @@
                   Some quick example text to build on the card title and make up the bulk of the
                   card's content.
                 </p>
-                <a href="#!" class="btn btn-primary">Button</a>
+                <a href="https://www.knrec.or.kr/energy/fuelcell_intro.aspx" class="btn btn-primary">Button</a>
               </div>
             </div>
           </div>
@@ -231,7 +231,7 @@
                   Some quick example text to build on the card title and make up the bulk of the
                   card's content.
                 </p>
-                <a href="#!" class="btn btn-primary">Button</a>
+                <a href="https://www.knrec.or.kr/energy/sunlight_intro.aspx" class="btn btn-primary">Button</a>
               </div>
             </div>
           </div>
@@ -250,7 +250,7 @@
                   Some quick example text to build on the card title and make up the bulk of the
                   card's content.
                 </p>
-                <a href="#!" class="btn btn-primary">Button</a>
+                <a href="https://www.knrec.or.kr/energy/bio_intro.aspx" class="btn btn-primary">Button</a>
               </div>
             </div>
           </div>
@@ -284,17 +284,17 @@
     </div>
 
     <hr class="m-0">
-
+  <div style='text-align:center;'>
     <div id='simulate'>
       <br><br><br><br>
-      <h2>서울시 전력 거래 예측</h2>
-      <h4>예측 결과를 반환합니다: </h4>
+      <h2>     서울시 전력 거래 예측</h2>
+      <h4>     예측 결과를 반환합니다: </h4>
       <br><br>
       
       <!--url_for() Flask에서 동적 URL 만들기-->
       <form method="POST", action = "{{url_for('prediction')}}",style='text-align:center;'>
         <div>
-          연료원  : <label for= "연료원">연료원</label>
+            <label for= "연료원">연료원</label>
             <select id='연료원', name="연료원">
             <option value="none" disabled>=== 선택 ===</option>
             <option value="0" selected>LNG</option>
@@ -306,7 +306,7 @@
         </div>  
 
         <div>
-            Month   :<label for= "Month">Month</label>
+            <label for= "Month">Month</label>
             <select id='Month', name='Month'>
             <option value="none" disabled>=== 선택 ===</option>
             <option value="0" selected>1월</option>
@@ -324,7 +324,7 @@
             </select><br><br>
         </div>
         <div>
-            Day     :<label for= "Day">Day</label>
+            <label for= "Day">Day</label>
             <select id='Day', name='Day'>
             <option value="0" selected>1</option>
             <option value="1" selected>2</option>
@@ -364,16 +364,17 @@
     </form>
           </div>
       {{pred}}
-   
+
       <a href='/'>시작 화면으로 돌아갑니다</a>
+  </div> 
       <br>
       <h1><p><strong>Dash Board</strong></p></h1>
       <iframe
-  src="http://192.168.16.1:3000/public/dashboard/ab233816-a2f4-4bd5-a3d5-20a17764e782"
-  frameborder="0"
-  width="1880"
-  height="950"
-  allowtransparency
+    src="http://192.168.16.1:3000/public/dashboard/63ef0dfe-58d1-4357-800d-f7e003a4d044"
+    frameborder="0"
+    width="1880"
+    height="950"
+    allowtransparency
 ></iframe>
   
       
