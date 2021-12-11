@@ -23,10 +23,6 @@ def prediction():
     data3= request.form['Day']
     arr=np.array([[data1,data2,data3]])
     pred = model.predict(arr)
-    '''
-    pred = model.predict(
-        [[int(data1),int(data2),int(data3)]]) #int로 data1 부분 바꿔줌
-    y_pred=np.argmax(pred)### 이 부분 다시 점검'''
     return render_template('return.html',data=pred)
 
 #prediction function
