@@ -7,6 +7,9 @@
 다중선형모델을 사용합니다.
 본 데이터는 300일정도의 정보를 담고 있지만, 11월 12월의 데이터를 포함한 1년단위의 데이터가 누적된다면 더 좋은 예측이 가능할 것이라 생각됩니다.
 
+**대시보드**
+![image](https://user-images.githubusercontent.com/89770691/159124902-a4e7a92c-4288-469c-b72c-87d281dd050b.png)
+
 ### 1. Data Pipeline
 ![002](https://user-images.githubusercontent.com/89770691/145943757-6206033a-e9af-46dc-87dd-c33a26bdb413.jpg)
 
