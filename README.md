@@ -13,6 +13,8 @@
 SEOUL-ENERGY의 배포된 web-app을 첨부합니다.
 https://seoul-energy.herokuapp.com/
 
+pdf 파일:  https://github.com/MinsooKwak/SEOUL-ENERGY_api/blob/main/Seoul_Energy.pdf
+
 ----
 
 ### 사용 언어 및 툴
