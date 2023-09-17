@@ -12,6 +12,7 @@
 ### SEOUL-ENERGY 
 SEOUL-ENERGY의 배포된 web-app을 첨부합니다.
 https://seoul-energy.herokuapp.com/
+- 현재 heroku의 유료화에 따라 Demo를 추가하였습니다 : [Demo 영상](https://github.com/MinsooKwak/SEOUL-ENERGY_api/blob/main/seoul_energy.mp4)
 
 pdf 파일:  https://github.com/MinsooKwak/SEOUL-ENERGY_api/blob/main/Seoul_Energy.pdf
 
